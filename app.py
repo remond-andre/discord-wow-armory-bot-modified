@@ -134,19 +134,11 @@ async def on_message(message):
                 title="%s" % (info['name']),
                 colour=discord.Colour(info['class_colour']),
                 url="%s" % (info['armory']),
-                description="%s %s %s %s" % (
-                    info['level'], info['faction'], info['spec'], info['class_type']))
+                description="%s %s %s %s - %s (%s)" % (
+                    info['level'], info['faction'], info['spec'], info['class_type'], info['realm'], region.upper()))
             msg.set_thumbnail(
                 url="https://render-%s.worldofwarcraft.com/character/%s" % (
                     region, info['thumb']))
-            msg.set_footer(
-                text="!armory help | Feedback: https://github.com/JamesIves/discord-wow-armory-bot/issues",
-                icon_url="https://github.com/JamesIves/discord-wow-armory-bot/blob/master/assets/icon.png?raw=true")
-            msg.add_field(
-                name="Character",
-                value="**`Name`:** `%s`\n**`Realm`:** `%s (%s)`\n**`Battlegroup`:** `%s`\n**`Item Level`:** `%s`" % (
-                    info['name'], info['realm'], region.upper(), info['battlegroup'], info['ilvl']),
-                inline=True)
             msg.add_field(
                 name="Arena Achievements",
                 value="**`Challenger`:** `%s`\n**`Rival`:** `%s`\n**`Duelist`:** `%s`\n**`Gladiator`:** `%s`" % (
@@ -174,16 +166,6 @@ async def on_message(message):
                 name="Rated Battlegrounds",
                 value="**`Rating`:** `%s`" % (
                     info['rbg']),
-                inline=True)
-            msg.add_field(
-                name="2v2 Skirmish",
-                value="**`Rating`:** `%s`" % (
-                    info['2v2s']),
-                inline=True)
-            msg.add_field(
-                name="Lifetime Honorable Kills",
-                value="**`Rating`:** `%s`" % (
-                    info['kills']),
                 inline=True)
 
             await client.send_message(message.channel, embed=msg)
