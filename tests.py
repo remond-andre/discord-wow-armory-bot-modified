@@ -160,7 +160,7 @@ class BaseTest(unittest.TestCase):
             'keystone_challenger': 'Completed',
             'arena_challenger': 'Completed',
             'arena_rival': 'Completed',
-            'arena_duelist': 'Completed',
+            'arena_duelist': 'Completeddddd',
             'arena_gladiator': 'Completed',
             'rbg_2400_name': AC_GRAND_MARSHALL_NAME,
             'rbg_2000_name': AC_LIEAUTENANT_COMMANDER_NAME,
