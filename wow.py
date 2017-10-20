@@ -40,6 +40,15 @@ def character_achievements(achievement_data, faction):
     arena_duelist = 'In Progress'
     arena_gladiator = 'In Progress'
     arena_2v2_1550 = 'In Progress'
+    arena_2v2_1750 = 'In Progress'
+    arena_2v2_2000 = 'In Progress'
+    arena_2v2_2200 = 'In Progress'
+    arena_3v3_1550 = 'In Progress'
+    arena_3v3_1750 = 'In Progress'
+    arena_3v3_2000 = 'In Progress'
+    arena_3v3_2200 = 'In Progress'
+    arena_3v3_2400 = 'In Progress'
+    arena_3v3_2700 = 'In Progress'
     rbg_2400 = 'In Progress'
     rbg_2000 = 'In Progress'
     rbg_1500 = 'In Progress'
@@ -74,6 +83,33 @@ def character_achievements(achievement_data, faction):
 
     if AC_2V2_1550 in achievements['achievementsCompleted']:
         arena_2v2_1550 = 'Completed'
+
+    if AC_2V2_1750 in achievements['achievementsCompleted']:
+        arena_2v2_1750 = 'Completed'
+
+    if AC_2V2_2000 in achievements['achievementsCompleted']:
+        arena_2v2_2000 = 'Completed'
+
+    if AC_2V2_2200 in achievements['achievementsCompleted']:
+        arena_2v2_2200 = 'Completed'
+
+    if AC_3V3_1550 in achievements['achievementsCompleted']:
+        arena_3v3_1550 = 'Completed'
+
+    if AC_3V3_1750 in achievements['achievementsCompleted']:
+        arena_3v3_1750 = 'Completed'
+
+    if AC_3V3_2000 in achievements['achievementsCompleted']:
+        arena_3v3_2000 = 'Completed'
+
+    if AC_3V3_2200 in achievements['achievementsCompleted']:
+        arena_3v3_2200 = 'Completed'
+
+    if AC_3V3_2400 in achievements['achievementsCompleted']:
+        arena_3v3_2400 = 'Completed'
+
+    if AC_3V3_2700 in achievements['achievementsCompleted']:
+        arena_3v3_2700 = 'Completed'
 
     if AC_AOTC_EN in achievements['achievementsCompleted']:
         en_feat = 'Ahead of the Curve'
@@ -140,7 +176,16 @@ def character_achievements(achievement_data, faction):
         'arena_rival': arena_rival,
         'arena_duelist': arena_duelist,
         'arena_gladiator': arena_gladiator,
-		'arena_2v2_1550': arena_2v2_1550,
+        'arena_2v2_1550': arena_2v2_1550,
+        'arena_2v2_1750': arena_2v2_1750,
+        'arena_2v2_2000': arena_2v2_2000,
+        'arena_2v2_2200': arena_2v2_2200,
+        'arena_3v3_1550': arena_3v3_1550,
+        'arena_3v3_1750': arena_3v3_1750,
+        'arena_3v3_2000': arena_3v3_2000,
+        'arena_3v3_2200': arena_3v3_2200,
+        'arena_3v3_2400': arena_3v3_2400,
+        'arena_3v3_2700': arena_3v3_2700,
         'rbg_2400_name': rbg_2400_name,
         'rbg_2000_name': rbg_2000_name,
         'rbg_1500_name': rbg_1500_name,
@@ -429,6 +474,15 @@ def character_info(name, realm, query, region):
                 'arena_duelist': achievements['arena_duelist'],
                 'arena_gladiator': achievements['arena_gladiator'],
                 'arena_2v2_1550': achievements['arena_2v2_1550'],
+                'arena_2v2_1750': achievements['arena_2v2_1750'],
+                'arena_2v2_2000': achievements['arena_2v2_2000'],
+                'arena_2v2_2200': achievements['arena_2v2_2200'],
+                'arena_3v3_1550': achievements['arena_3v3_1550'],
+                'arena_3v3_1750': achievements['arena_3v3_1750'],
+                'arena_3v3_2000': achievements['arena_3v3_2000'],
+                'arena_3v3_2200': achievements['arena_3v3_2200'],
+                'arena_3v3_2400': achievements['arena_3v3_2400'],
+                'arena_3v3_2700': achievements['arena_3v3_2700'],
                 '2v2': pvp['2v2'],
                 '2v2s': pvp['2v2s'],
                 '3v3': pvp['3v3'],
