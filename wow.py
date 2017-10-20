@@ -50,8 +50,11 @@ def character_achievements(achievement_data, faction):
     arena_3v3_2400 = 'In Progress'
     arena_3v3_2700 = 'In Progress'
     rbg_2400 = 'In Progress'
+	rbg_2300 = 'In Progress'
+	rbg_2200 = 'In Progress'
+	rbg_2100 = 'In Progress'
     rbg_2000 = 'In Progress'
-    rbg_1500 = 'In Progress'
+    rbg_1800 = 'In Progress'
     en_feat = ''
     tov_feat = ''
     nh_feat = ''
@@ -140,18 +143,30 @@ def character_achievements(achievement_data, faction):
     # RBG achievements have a different id/name based on faction, checks these
     # based on function argument.
     if faction == 'Alliance':
-        rbg_2400_name = AC_GRAND_MARSHALL_NAME
-        rbg_2000_name = AC_LIEAUTENANT_COMMANDER_NAME
-        rbg_1500_name = AC_SERGEANT_MAJOR_NAME
-
-        if AC_GRAND_MARSHALL in achievements['achievementsCompleted']:
+        rbg_2400_name = AC_A_RBG_2400_NAME
+		rbg_2300_name = AC_A_RBG_2300_NAME
+		rbg_2200_name = AC_A_RBG_2200_NAME
+		rbg_2100_name = AC_A_RBG_2100_NAME
+		rbg_2000_name = AC_A_RBG_2000_NAME
+		rbg_1800_name = AC_A_RBG_1800_NAME
+		
+        if AC_A_RBG_2400_NAME in achievements['achievementsCompleted']:
             rbg_2400 = 'Completed'
 
-        if AC_LIEUTENANT_COMMANDER in achievements['achievementsCompleted']:
+        if AC_A_RBG_2300_NAME in achievements['achievementsCompleted']:
+            rbg_2300 = 'Completed'
+
+        if AC_A_RBG_2200_NAME in achievements['achievementsCompleted']:
+            rbg_2200 = 'Completed'
+			
+        if AC_A_RBG_2100_NAME in achievements['achievementsCompleted']:
+            rbg_2100 = 'Completed'
+
+        if AC_A_RBG_2000_NAME in achievements['achievementsCompleted']:
             rbg_2000 = 'Completed'
 
-        if AC_SERGEANT_MAJOR in achievements['achievementsCompleted']:
-            rbg_1500 = 'Completed'
+        if AC_A_RBG_1800_NAME in achievements['achievementsCompleted']:
+            rbg_1800 = 'Completed'
 
     if faction == 'Horde':
         rbg_2400_name = AC_HIGH_WARLORD_NAME
@@ -187,11 +202,17 @@ def character_achievements(achievement_data, faction):
         'arena_3v3_2400': arena_3v3_2400,
         'arena_3v3_2700': arena_3v3_2700,
         'rbg_2400_name': rbg_2400_name,
+        'rbg_2300_name': rbg_2300_name,
+        'rbg_2200_name': rbg_2200_name,
+        'rbg_2100_name': rbg_2100_name,
         'rbg_2000_name': rbg_2000_name,
-        'rbg_1500_name': rbg_1500_name,
+        'rbg_1800_name': rbg_1800_name,
         'rbg_2400': rbg_2400,
-        'rbg_2000': rbg_2000,
-        'rbg_1500': rbg_1500,
+		'rbg_2300': rbg_2300,
+		'rbg_2200': rbg_2200,
+		'rbg_2100': rbg_2100,
+		'rbg_2000': rbg_2000,
+        'rbg_1800': rbg_1800,
         'en_feat': en_feat,
         'tov_feat': tov_feat,
         'nh_feat': nh_feat,
@@ -490,10 +511,16 @@ def character_info(name, realm, query, region):
                 'kills': pvp['kills'],
                 'rbg_2400_name': achievements['rbg_2400_name'],
                 'rbg_2400': achievements['rbg_2400'],
+				'rbg_2300_name': achievements['rbg_2300_name'],
+                'rbg_2300': achievements['rbg_2300'],
+				'rbg_2200_name': achievements['rbg_2200_name'],
+                'rbg_2200': achievements['rbg_2200'],
+				'rbg_2100_name': achievements['rbg_2100_name'],
+                'rbg_2100': achievements['rbg_2100'],
                 'rbg_2000_name': achievements['rbg_2000_name'],
                 'rbg_2000': achievements['rbg_2000'],
-                'rbg_1500_name': achievements['rbg_1500_name'],
-                'rbg_1500': achievements['rbg_1500'],
+                'rbg_1800_name': achievements['rbg_1800_name'],
+                'rbg_1800': achievements['rbg_1800'],
             }
 
             return pvp_character_sheet
