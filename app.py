@@ -156,8 +156,8 @@ async def on_message(message):
                 name="RBG Achievements",
                 value="**`1800`:** `%s`\n**`2000`:** `%s`\n**`2100`:** `%s`\n**`2200`:** `%s`\n**`2300`:** `%s`\n**`2400`:** `%s`" % (
                     info['rbg_1800'],info['rbg_2000'],
-					info['rbg_2100'],info['rbg_2200'],
-					info['rbg_2300'],info['rbg_2400']),
+                    info['rbg_2100'],info['rbg_2200'],
+                    info['rbg_2300'],info['rbg_2400']),
                 inline=True)
             msg.add_field(
                 name="Rated 2v2",
