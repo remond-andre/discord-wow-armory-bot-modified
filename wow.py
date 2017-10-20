@@ -54,7 +54,10 @@ def character_achievements(achievement_data, faction):
     rbg_2200 = 'In Progress'
     rbg_2100 = 'In Progress'
     rbg_2000 = 'In Progress'
+    rbg_1900 = 'In Progress'
     rbg_1800 = 'In Progress'
+    rbg_1700 = 'In Progress'
+    rbg_1600 = 'In Progress'
     en_feat = ''
     tov_feat = ''
     nh_feat = ''
@@ -148,7 +151,10 @@ def character_achievements(achievement_data, faction):
         rbg_2200_name = AC_A_RBG_2200_NAME
         rbg_2100_name = AC_A_RBG_2100_NAME
         rbg_2000_name = AC_A_RBG_2000_NAME
+        rbg_1900_name = AC_A_RBG_1900_NAME
         rbg_1800_name = AC_A_RBG_1800_NAME
+        rbg_1700_name = AC_A_RBG_1700_NAME
+        rbg_1600_name = AC_A_RBG_1600_NAME
         
         if AC_A_RBG_2400 in achievements['achievementsCompleted']:
             rbg_2400 = 'Completed'
@@ -165,8 +171,17 @@ def character_achievements(achievement_data, faction):
         if AC_A_RBG_2000 in achievements['achievementsCompleted']:
             rbg_2000 = 'Completed'
 
+        if AC_A_RBG_1900 in achievements['achievementsCompleted']:
+            rbg_1900 = 'Completed'
+
         if AC_A_RBG_1800 in achievements['achievementsCompleted']:
             rbg_1800 = 'Completed'
+
+        if AC_A_RBG_1700 in achievements['achievementsCompleted']:
+            rbg_1700 = 'Completed'
+
+        if AC_A_RBG_1600 in achievements['achievementsCompleted']:
+            rbg_1600 = 'Completed'
 
     if faction == 'Horde':
         rbg_2400_name = AC_HIGH_WARLORD_NAME
@@ -206,13 +221,19 @@ def character_achievements(achievement_data, faction):
         'rbg_2200_name': rbg_2200_name,
         'rbg_2100_name': rbg_2100_name,
         'rbg_2000_name': rbg_2000_name,
+        'rbg_1900_name': rbg_1900_name,
         'rbg_1800_name': rbg_1800_name,
+        'rbg_1700_name': rbg_1700_name,
+        'rbg_1600_name': rbg_1600_name,
         'rbg_2400': rbg_2400,
         'rbg_2300': rbg_2300,
         'rbg_2200': rbg_2200,
         'rbg_2100': rbg_2100,
         'rbg_2000': rbg_2000,
+        'rbg_1900': rbg_1900,
         'rbg_1800': rbg_1800,
+        'rbg_1700': rbg_1700,
+        'rbg_1600': rbg_1600,
         'en_feat': en_feat,
         'tov_feat': tov_feat,
         'nh_feat': nh_feat,
@@ -519,8 +540,14 @@ def character_info(name, realm, query, region):
                 'rbg_2100': achievements['rbg_2100'],
                 'rbg_2000_name': achievements['rbg_2000_name'],
                 'rbg_2000': achievements['rbg_2000'],
+                'rbg_1900_name': achievements['rbg_1900_name'],
+                'rbg_1900': achievements['rbg_1900'],
                 'rbg_1800_name': achievements['rbg_1800_name'],
                 'rbg_1800': achievements['rbg_1800'],
+                'rbg_1700_name': achievements['rbg_1700_name'],
+                'rbg_1700': achievements['rbg_1700'],
+                'rbg_1600_name': achievements['rbg_1600_name'],
+                'rbg_1600': achievements['rbg_1600'],
             }
 
             return pvp_character_sheet
