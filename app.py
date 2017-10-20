@@ -160,7 +160,7 @@ async def on_message(message):
                     info['rbg_2000'],info['rbg_2100'],
                     info['rbg_2200'],info['rbg_2300'],
                     info['rbg_2400']),
-                inline=True)
+                inline=False)
             msg.add_field(
                 name="Rated 2v2",
                 value="**`Rating`:** `%s`" % (
@@ -170,7 +170,7 @@ async def on_message(message):
                 name="Rated 3v3",
                 value="**`Rating`:** `%s`" % (
                     info['3v3']),
-                inline=False)
+                inline=True)
             msg.add_field(
                 name="Rated Battlegrounds",
                 value="**`Rating`:** `%s`" % (
