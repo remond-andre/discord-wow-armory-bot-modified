@@ -143,7 +143,7 @@ async def on_message(message):
                 name="Arena Achievements",
                 value="**`Challenger`:** `%s`\n**`Rival`:** `%s`\n**`Duelist`:** `%s`\n**`Gladiator`:** `%s`\n**`2v2 1550`:** `%s`" % (
                     info['arena_challenger'], info['arena_rival'],
-                    info['arena_duelist'], info['arena_gladiator'],
+                    info['arena_duelist'], info['arena_gladiator']),
                     info['arena_2v2_1550']),
                 inline=True)
             msg.add_field(
@@ -157,17 +157,17 @@ async def on_message(message):
                 name="Rated 2v2",
                 value="**`Rating`:** `%s`" % (
                     info['2v2']),
-                inline=True)
+                inline=False)
             msg.add_field(
                 name="Rated 3v3",
                 value="**`Rating`:** `%s`" % (
                     info['3v3']),
-                inline=True)
+                inline=False)
             msg.add_field(
                 name="Rated Battlegrounds",
                 value="**`Rating`:** `%s`" % (
                     info['rbg']),
-                inline=True)
+                inline=False)
 
             await client.send_message(message.channel, embed=msg)
 
