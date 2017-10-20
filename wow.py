@@ -158,44 +158,52 @@ def character_achievements(achievement_data, faction):
         
         if AC_A_RBG_2400 in achievements['achievementsCompleted']:
             rbg_2400 = 'Completed'
-
         if AC_A_RBG_2300 in achievements['achievementsCompleted']:
             rbg_2300 = 'Completed'
-
         if AC_A_RBG_2200 in achievements['achievementsCompleted']:
             rbg_2200 = 'Completed'
-            
         if AC_A_RBG_2100 in achievements['achievementsCompleted']:
             rbg_2100 = 'Completed'
-
         if AC_A_RBG_2000 in achievements['achievementsCompleted']:
             rbg_2000 = 'Completed'
-
         if AC_A_RBG_1900 in achievements['achievementsCompleted']:
             rbg_1900 = 'Completed'
-
         if AC_A_RBG_1800 in achievements['achievementsCompleted']:
             rbg_1800 = 'Completed'
-
         if AC_A_RBG_1700 in achievements['achievementsCompleted']:
             rbg_1700 = 'Completed'
-
         if AC_A_RBG_1600 in achievements['achievementsCompleted']:
             rbg_1600 = 'Completed'
 
     if faction == 'Horde':
-        rbg_2400_name = AC_HIGH_WARLORD_NAME
-        rbg_2000_name = AC_CHAMPION_NAME
-        rbg_1500_name = AC_FIRST_SERGEANT_NAME
+        rbg_2400_name = AC_H_RBG_2400_NAME
+        rbg_2300_name = AC_H_RBG_2300_NAME
+        rbg_2200_name = AC_H_RBG_2200_NAME
+        rbg_2100_name = AC_H_RBG_2100_NAME
+        rbg_2000_name = AC_H_RBG_2000_NAME
+        rbg_1900_name = AC_H_RBG_1900_NAME
+        rbg_1800_name = AC_H_RBG_1800_NAME
+        rbg_1700_name = AC_H_RBG_1700_NAME
+        rbg_1600_name = AC_H_RBG_1600_NAME
 
-        if AC_HIGH_WARLORD in achievements['achievementsCompleted']:
+        if AC_H_RBG_2400 in achievements['achievementsCompleted']:
             rbg_2400 = 'Completed'
-
-        if AC_CHAMPION in achievements['achievementsCompleted']:
+        if AC_H_RBG_2300 in achievements['achievementsCompleted']:
+            rbg_2300 = 'Completed'
+        if AC_H_RBG_2200 in achievements['achievementsCompleted']:
+            rbg_2200 = 'Completed'
+        if AC_H_RBG_2100 in achievements['achievementsCompleted']:
+            rbg_2100 = 'Completed'
+        if AC_H_RBG_2000 in achievements['achievementsCompleted']:
             rbg_2000 = 'Completed'
-
-        if AC_FIRST_SERGEANT in achievements['achievementsCompleted']:
-            rbg_1500 = 'Completed'
+        if AC_H_RBG_1900 in achievements['achievementsCompleted']:
+            rbg_1900 = 'Completed'
+        if AC_H_RBG_1800 in achievements['achievementsCompleted']:
+            rbg_1800 = 'Completed'
+        if AC_H_RBG_1700 in achievements['achievementsCompleted']:
+            rbg_1700 = 'Completed'
+        if AC_H_RBG_1600 in achievements['achievementsCompleted']:
+            rbg_1600 = 'Completed'
 
     achievement_list = {
         'challenging_look': challenging_look,
