@@ -45,6 +45,15 @@ AC_A_RBG_2100 = 5340
 AC_A_RBG_2200 = 5341
 AC_A_RBG_2300 = 5357
 AC_A_RBG_2400 = 5343
+AC_H_RBG_1600 = 5350
+AC_H_RBG_1700 = 5351
+AC_H_RBG_1800 = 5352
+AC_H_RBG_1900 = 5338
+AC_H_RBG_2000 = 5353
+AC_H_RBG_2100 = 5354
+AC_H_RBG_2200 = 5355
+AC_H_RBG_2300 = 5342
+AC_H_RBG_2400 = 5356
 
 # Achievement Title Constants
 AC_HIGH_WARLORD_NAME = 'High Warlord'
@@ -62,6 +71,15 @@ AC_A_RBG_2100_NAME = 'Commander'
 AC_A_RBG_2200_NAME = 'Marshal'
 AC_A_RBG_2300_NAME = 'Field Marshal'
 AC_A_RBG_2400_NAME = 'Grand Marshal'
+AC_H_RBG_1600_NAME = 'Stone Guard'
+AC_H_RBG_1700_NAME = 'Blood Guard'
+AC_H_RBG_1800_NAME = 'Legionnaire'
+AC_H_RBG_1900_NAME = 'Centurion'
+AC_H_RBG_2000_NAME = 'Champion'
+AC_H_RBG_2100_NAME = 'Lieutenant General'
+AC_H_RBG_2200_NAME = 'General'
+AC_H_RBG_2300_NAME = 'Warlord'
+AC_H_RBG_2400_NAME = 'High Warlord'
 
 # Raid Constants
 RAID_EN = 8026
