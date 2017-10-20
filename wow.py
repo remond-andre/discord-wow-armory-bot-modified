@@ -150,22 +150,22 @@ def character_achievements(achievement_data, faction):
         rbg_2000_name = AC_A_RBG_2000_NAME
         rbg_1800_name = AC_A_RBG_1800_NAME
         
-        if AC_A_RBG_2400_NAME in achievements['achievementsCompleted']:
+        if AC_A_RBG_2400 in achievements['achievementsCompleted']:
             rbg_2400 = 'Completed'
 
-        if AC_A_RBG_2300_NAME in achievements['achievementsCompleted']:
+        if AC_A_RBG_2300 in achievements['achievementsCompleted']:
             rbg_2300 = 'Completed'
 
-        if AC_A_RBG_2200_NAME in achievements['achievementsCompleted']:
+        if AC_A_RBG_2200 in achievements['achievementsCompleted']:
             rbg_2200 = 'Completed'
             
-        if AC_A_RBG_2100_NAME in achievements['achievementsCompleted']:
+        if AC_A_RBG_2100 in achievements['achievementsCompleted']:
             rbg_2100 = 'Completed'
 
-        if AC_A_RBG_2000_NAME in achievements['achievementsCompleted']:
+        if AC_A_RBG_2000 in achievements['achievementsCompleted']:
             rbg_2000 = 'Completed'
 
-        if AC_A_RBG_1800_NAME in achievements['achievementsCompleted']:
+        if AC_A_RBG_1800 in achievements['achievementsCompleted']:
             rbg_1800 = 'Completed'
 
     if faction == 'Horde':
