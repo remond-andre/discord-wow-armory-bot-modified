@@ -141,9 +141,10 @@ async def on_message(message):
                     region, info['thumb']))
             msg.add_field(
                 name="Arena Achievements",
-                value="**`Challenger`:** `%s`\n**`Rival`:** `%s`\n**`Duelist`:** `%s`\n**`Gladiator`:** `%s`" % (
+                value="**`Challenger`:** `%s`\n**`Rival`:** `%s`\n**`Duelist`:** `%s`\n**`Gladiator`:** `%s`\n**`2v2 1550`:** `%s`" % (
                     info['arena_challenger'], info['arena_rival'],
                     info['arena_duelist'], info['arena_gladiator']),
+                    info['arena_2v2_1550']),
                 inline=True)
             msg.add_field(
                 name="RBG Achievements",
