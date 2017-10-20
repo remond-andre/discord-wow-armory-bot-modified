@@ -153,27 +153,29 @@ async def on_message(message):
                     info['arena_3v3_2400'], info['arena_3v3_2700']),
                 inline=True)
             msg.add_field(
-                name="RBG Achievements",
-                value="**`1800`:** `%s`\n**`2000`:** `%s`\n**`2100`:** `%s`\n**`2200`:** `%s`\n**`2300`:** `%s`\n**`2400`:** `%s`" % (
-                    info['rbg_1800'],info['rbg_2000'],
-                    info['rbg_2100'],info['rbg_2200'],
-                    info['rbg_2300'],info['rbg_2400']),
-                inline=True)
-            msg.add_field(
                 name="Rated 2v2",
                 value="**`Rating`:** `%s`" % (
                     info['2v2']),
-                inline=False)
+                inline=True)
             msg.add_field(
                 name="Rated 3v3",
                 value="**`Rating`:** `%s`" % (
                     info['3v3']),
-                inline=False)
+                inline=True)
+            msg.add_field(
+                name="RBG Achievements",
+                value="**`1600`:** `%s`\n**`1700`:** `%s`\n**`1800`:** `%s`\n**`1900`:** `%s`\n**`2000`:** `%s`\n**`2100`:** `%s`\n**`2200`:** `%s`\n**`2300`:** `%s`\n**`2400`:** `%s`" % (
+                    info['rbg_1600'],info['rbg_1700'],
+                    info['rbg_1800'],info['rbg_1900'],
+                    info['rbg_2000'],info['rbg_2100'],
+                    info['rbg_2200'],info['rbg_2300'],
+                    info['rbg_2400']),
+                inline=True)
             msg.add_field(
                 name="Rated Battlegrounds",
                 value="**`Rating`:** `%s`" % (
                     info['rbg']),
-                inline=False)
+                inline=True)
 
             await client.send_message(message.channel, embed=msg)
 
