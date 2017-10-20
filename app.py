@@ -141,13 +141,13 @@ async def on_message(message):
                     region, info['thumb']))
             msg.add_field(
                 name="2v2 Achievements",
-                value="**`Just the Two of Us 1550`:** `%s`\n**`Just the Two of Us 1750`:** `%s`\n**`Just the Two of Us 2000`:** `%s`\n**`Just the Two of Us 2200`:** `%s`" % (
+                value="**`1550`:** `%s`\n**`1750`:** `%s`\n**`2000`:** `%s`\n**`2200`:** `%s`" % (
                     info['arena_2v2_1550'], info['arena_2v2_1750'],
                     info['arena_2v2_2000'], info['arena_2v2_2200']),
                 inline=True)
             msg.add_field(
                 name="3v3 Achievements",
-                value="**`Three's Company 1550`:** `%s`\n**`Three's Company 1750`:** `%s`\n**`Three's Company 2000`:** `%s`\n**`Three's Company 2200`:** `%s`\n**`Three's Company 2400`:** `%s`\n**`Three's Company 2700`:** `%s`" % (
+                value="**`1550`:** `%s`\n**`1750`:** `%s`\n**`2000`:** `%s`\n**`2200`:** `%s`\n**`2400`:** `%s`\n**`2700`:** `%s`" % (
                     info['arena_3v3_1550'], info['arena_3v3_1750'],
                     info['arena_3v3_2000'], info['arena_3v3_2200'],
                     info['arena_3v3_2400'], info['arena_3v3_2700']),
